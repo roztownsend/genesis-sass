@@ -4,6 +4,16 @@
 @import 'fonts';
 @import 'rem-to-px';
 
+// Intro section
+
+.layout_title, .job_title {
+    color: $highlight-color;
+}
+
+.layout_title {
+    font-weight: bold;
+}
+
 .intro {
     display: flex;
     flex-wrap: nowrap;
@@ -25,7 +35,7 @@
         padding-bottom: 3%;
     }
     
-    &__tagline:before {
+    &__tagline::before {
         border-top: 1px solid #888;
         content: "";
         display: block;
@@ -36,12 +46,71 @@
 }
 
 
+// Gallery grid section
 
-.layout_title, .job_title {
-    color: $highlight-color;
+.gallery_grid {
+    display: grid;
+    grid-template-rows: repeat(32);
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 1rem;
+    margin: auto;
+    min-width: rem(357px);
+    min-height: auto;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__zero {
+        grid-area: 1 / 1 / 7 / 4;
+    }
+
+    &__first {
+        grid-area: 7 / 1 / 15 / 4;
+    }
+
+    &__second {
+        grid-area: 15 / 1 / 23 / 4;
+    }
+
+    &__third {
+        grid-area: 23 / 1 / 32 / 4; 
+    }
+    
+    &__fourth {
+        grid-area: 1 / 4 / 6 / 7;
+    }
+    
+    &__fifth {
+        grid-area: 6 / 4 / 13 / 7;
+    }
+
+    &__sixth {
+        grid-area: 13 / 4 / 22 / 7;
+    }
+
+    &__seventh {
+        grid-area: 22 / 4 / 32 / 7;
+    }
+    
+    &__eighth {
+        grid-area: 1 / 7 / 10 / 10;
+    }
+ 
+    &__ninth {
+        grid-area: 10 / 7 / 17 / 10;
+    }
+
+    &__tenth {
+        grid-area: 17 / 7 / 26 / 10;
+    }
+
+    &__eleventh {
+        grid-area: 26 / 7 / 32 / 10;
+    }
+
+    
+
 }
-
-.layout_title {
-    font-weight: bold;
-}
-
