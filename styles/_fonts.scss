@@ -2,6 +2,7 @@
 // affect loading speed?
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,200&display=swap');
+@import 'rem-to-px';
 
 // // Font styles
 
@@ -52,4 +53,8 @@ h6 {
 .title {
     font-weight: bold;
     color: $highlight-color;
+}
+
+i {
+    padding-left: rem(23px);
 }

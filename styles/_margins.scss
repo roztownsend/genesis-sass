@@ -1,10 +1,14 @@
 
-header {
+
+// Header and footer elements are here!
+
+header, footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .nav_wrapper {
@@ -14,9 +18,16 @@ header {
 
 nav ul {
     list-style-type: none;
+    text-align: right;
 }
 
-nav li {
+nav li, {
     display: inline;
-    padding-left: 3%;
+    font-weight: bold;
+    padding-left: 5%;
+}
+
+.socials {
+    text-align: right;
+    width: 20%;
 }
