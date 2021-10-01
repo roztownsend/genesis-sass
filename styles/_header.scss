@@ -1,0 +1,22 @@
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 3%;
+}
+
+.nav_wrapper {
+    flex-grow: 1;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    padding-left: 3%;
+}
