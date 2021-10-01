@@ -1,0 +1,47 @@
+// This sheet corresponds to the index page. For site-wide styles, 
+// see main.css!
+
+@import 'fonts';
+@import 'rem-to-px';
+
+.intro {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    &__statement { 
+        width: 59%; 
+    }
+
+    &__tagline {
+        width: max-content;
+        display: table;
+        font-size: rem(18);
+        font-weight: 200;
+        font-style: italic;
+        padding-bottom: 3%;
+    }
+    
+    &__tagline:before {
+        border-top: 1px solid #888;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 15%;
+        padding-bottom: 3%;
+      }
+}
+
+
+
+.layout_title, .job_title {
+    color: $highlight-color;
+}
+
+.layout_title {
+    font-weight: bold;
+}
+

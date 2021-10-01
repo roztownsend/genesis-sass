@@ -1,10 +1,10 @@
 // Google fonts - I've heard that importing the font like this might actually
-// affect loading speed?
+// affect loading speed because it doesn't load directly from the html document?
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,200&display=swap');
 @import 'rem-to-px';
 
-// // Font styles
+// site-wide font styles
 
 $mulish: "Mulish", sans-serif;
 $primary-color: #111111;
@@ -14,7 +14,7 @@ $secondary-color: #979797;
 body {
     font-family: $mulish;
     color: $primary-color;
-    font-size: rem(16px);
+    font-size: rem(16);
     font-weight: 400;
 }
 
@@ -48,13 +48,4 @@ h5 {
 h6 {
     font-size: rem(18px);
     color: $secondary-color;
-}
-
-.title {
-    font-weight: bold;
-    color: $highlight-color;
-}
-
-i {
-    padding-left: rem(23px);
 }

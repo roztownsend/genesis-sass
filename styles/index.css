@@ -38,49 +38,42 @@ h6 {
   color: #979797;
 }
 
-header, footer {
+.intro {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-end;
   padding-top: 3%;
   padding-bottom: 3%;
 }
 
-.nav_wrapper {
-  flex-grow: 1;
-  text-align: right;
+.intro__statement {
+  width: 59%;
 }
 
-nav ul {
-  list-style-type: none;
-  text-align: right;
+.intro__tagline {
+  width: max-content;
+  display: table;
+  font-size: 1.125rem;
+  font-weight: 200;
+  font-style: italic;
+  padding-bottom: 3%;
 }
 
-nav li {
-  display: inline;
+.intro__tagline:before {
+  border-top: 1px solid #888;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 15%;
+  padding-bottom: 3%;
+}
+
+.layout_title, .job_title {
+  color: #4A4FF2;
+}
+
+.layout_title {
   font-weight: bold;
-  padding-left: 5%;
 }
-
-.socials {
-  text-align: right;
-  width: 20%;
-}
-
-i {
-  padding-left: 1.4375rem;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #F2F2F2;
-  margin: auto;
-  height: 100vh;
-  width: 100vw;
-  max-width: 90%;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */
