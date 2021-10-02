@@ -1,7 +1,7 @@
 // This sheet corresponds to the index page. For site-wide styles, 
 // see main.css!
 
-@import 'fonts';
+@import 'main';
 @import 'rem-to-px';
 
 // Intro section
@@ -16,8 +16,8 @@
 
 .intro {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
+    flex-wrap: nowrap;
     align-items: flex-end;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -30,8 +30,6 @@
         width: max-content;
         display: table;
         font-size: rem(18);
-        font-weight: 200;
-        font-style: italic;
         padding-bottom: 3%;
     }
     
@@ -44,7 +42,6 @@
         padding-bottom: 3%;
       }
 }
-
 
 // Gallery grid section
 
@@ -110,7 +107,79 @@
     &__eleventh {
         grid-area: 26 / 7 / 32 / 10;
     }
+}
 
+// Services section
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3%;
+
+&__description {
+    width: 50%;
+    }    
     
+&__list {
+    width: 40%;
+
+    ul {
+        list-style-type: none;
+        columns: 2;
+        padding-left: 3%;
+        padding-top: 2%;
+        }    
+
+    li {
+        padding: 4%;
+        }
+    }
+}
+
+// Award table elements... is it appropriate to do this
+// with a table instead of flexbox?
+
+.awards_list {
+    border-top: 2px solid #D8D8D8;
+}
+
+.awards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 2px solid #D8D8D8;
+
+
+&__giver {
+    height: 100%;
+    }
+}
+
+.awards_box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-grow:1;
+    max-width: 55%;
+
+.entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+
+    > * {
+        padding-bottom: 5%;
+    }
+    
+    .app_name {
+        font-weight: $bold;
+    }
+
+    &__project {
+        max-width: 20%;
+    }
 
 }
+
+

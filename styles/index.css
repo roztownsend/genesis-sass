@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap");
 body {
   font-family: "Mulish", sans-serif;
+  font-weight: 200;
   color: #111111;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 }
 
 h2, h3, h4, h5, h6 {
-  font: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #111111;
 }
@@ -38,6 +38,52 @@ h6 {
   color: #979797;
 }
 
+header, footer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.nav_wrapper {
+  flex-grow: 1;
+  text-align: right;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  font-weight: bold;
+  padding-left: 5%;
+}
+
+footer {
+  bottom: 0;
+}
+
+.socials {
+  text-align: right;
+  width: 20%;
+}
+
+i {
+  padding-left: 1.4375rem;
+}
+
+body {
+  background-color: #F2F2F2;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  max-width: 90%;
+}
+
 .layout_title, .job_title {
   color: #4A4FF2;
 }
@@ -48,8 +94,8 @@ h6 {
 
 .intro {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-between;
+  flex-wrap: nowrap;
   align-items: flex-end;
   padding-top: 3%;
   padding-bottom: 3%;
@@ -63,8 +109,6 @@ h6 {
   width: max-content;
   display: table;
   font-size: 1.125rem;
-  font-weight: 200;
-  font-style: italic;
   padding-bottom: 3%;
 }
 
@@ -139,5 +183,71 @@ h6 {
 
 .gallery_grid__eleventh {
   grid-area: 26 / 7 / 32 / 10;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3%;
+}
+
+.services__description {
+  width: 50%;
+}
+
+.services__list {
+  width: 40%;
+}
+
+.services__list ul {
+  list-style-type: none;
+  columns: 2;
+  padding-left: 3%;
+  padding-top: 2%;
+}
+
+.services__list li {
+  padding: 4%;
+}
+
+.awards_list {
+  border-top: 2px solid #D8D8D8;
+}
+
+.awards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.awards__giver {
+  height: 100%;
+}
+
+.awards_box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: 55%;
+}
+
+.awards_box .entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.awards_box > * {
+  padding-bottom: 5%;
+}
+
+.awards_box .app_name {
+  font-weight: 700;
+}
+
+.awards_box__project {
+  max-width: 20%;
 }
 /*# sourceMappingURL=index.css.map */

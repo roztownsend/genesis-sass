@@ -21,10 +21,14 @@ nav ul {
     text-align: right;
 }
 
-nav li, {
+nav li {
     display: inline;
     font-weight: bold;
     padding-left: 5%;
+}
+
+footer {
+    bottom: 0;
 }
 
 .socials {

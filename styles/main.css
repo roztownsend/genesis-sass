@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;700&display=swap");
 body {
   font-family: "Mulish", sans-serif;
+  font-weight: 200;
   color: #111111;
   font-size: 1rem;
-  font-weight: 400;
 }
 
 a {
@@ -12,7 +12,7 @@ a {
 }
 
 h2, h3, h4, h5, h6 {
-  font: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #111111;
 }
@@ -61,6 +61,10 @@ nav li {
   display: inline;
   font-weight: bold;
   padding-left: 5%;
+}
+
+footer {
+  bottom: 0;
 }
 
 .socials {
