@@ -102,12 +102,13 @@
 
     li {
         padding: 4%;
+        color: $thin-grey;
+        @include label_font;
         }
     }
 }
 
-// Award table elements... is it appropriate to do this
-// with a table instead of flexbox?
+// Award table elements
 
 .awards_list {
     @include borderline-top;
@@ -131,24 +132,28 @@
     flex-direction: column;
     flex-grow:1;
     max-width: 55%;
+    flex-wrap: nowrap;
 
-.entry {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    }
-
-    > * {
-        padding-bottom: 5%;
-        padding-top: 3%;
-    }
-
-    .app_name {
-        font-weight: $bold;
-    }
+    .entry {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-shrink: 0;
+        
+        &__project {
+            padding-bottom: 5%;
+            padding-top: 3%;
+            font-size: rem(16px);
+            max-width: 25%;
+            }
+            
+        .app_desc {
+            color: $thin_grey;
+            }
+        }
 
     &__project {
-        max-width: 20%;
+        max-width: 25%;
     }
 
 }
