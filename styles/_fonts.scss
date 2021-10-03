@@ -18,7 +18,7 @@ body {
     font-family: $mulish;
     font-weight: $light;
     color: $primary-color;
-    font-size: rem(16);
+    font-size: rem(16px);
 }
 
 a {
@@ -44,18 +44,12 @@ h4 {
     font-size: rem(22px);
 }
 
-h5 {
-    font-size: rem(18px);
-}
-
 @mixin label_black {
-    font-size: rem(18px);
     color: $primary-color;
     font-weight: bold;
 }
 
 @mixin label_grey {
-    font-size: rem(18px);
     color: $secondary-color;
     font-weight: bold;
 }
@@ -63,3 +57,7 @@ h5 {
 @mixin bump-up {
     margin-top: 0;
 } 
+
+@mixin label_font {
+    font-size: rem(18px);
+}
