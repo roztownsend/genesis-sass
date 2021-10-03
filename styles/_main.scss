@@ -19,7 +19,6 @@ $borderline-color: #D8D8D8;
 // Document-wide formatting
 
 body {
-    background-color: #F2F2F2;
     margin: auto;
     height: 100vh;
     width: 100vw;
@@ -28,32 +27,33 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: min-content;
+    background-color: #F2F2F2;
+
 }
 
 .intro {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 5%;
 
-    &__statement { 
+    &__statement {
         max-width: 59%;
     }
 
     &__tagline {
-        width: max-content;
-        font-size: rem(18);
-        display: flex;
         align-self: flex-end;
+        font-style: italic;
+
+//I'm guessing I could be making my mixin variable here so I could just do this
+//with a different stroke color, but I'm running out of time :(
+
+        &::before {
+            border-top: 1px solid #979797;
+            content: "";
+            display: block;
+            height: 100%;
+            width: 15%;
+            padding-bottom: 3%;
+        }
     }
-    
-    &__tagline::before {
-        border-top: 1px solid #888;
-        content: "";
-        display: block;
-        height: 100%;
-        width: 15%;
-        padding-bottom: 3%;
-      }
 }

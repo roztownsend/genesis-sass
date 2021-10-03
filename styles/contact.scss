@@ -1,0 +1,33 @@
+
+@import 'fonts';
+@import 'main';
+@import 'rem-to-px';
+
+.contact_form {
+    @include label_font;
+    @include label_grey;
+
+    .input-field {
+        @include borderline-bottom;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+
+    input {
+        border: 0;
+        background-color: transparent;
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: $highlight-color;
+        padding: 5% 10% 5% 10%;
+        color: #FFF;
+        margin-top: 7%;
+        cursor: pointer;
+        border: 0;
+    }
+}

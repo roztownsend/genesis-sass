@@ -1,8 +1,8 @@
 // This sheet corresponds to the index page. For site-wide styles, 
 // see main.css!
 
-@import 'main';
 @import 'rem-to-px';
+@import 'main';
 
 // Intro section
 
@@ -118,11 +118,10 @@
     justify-content: space-between;
     align-items: flex-start;
     @include borderline-bottom;
-    padding-top: 3%;
 
 
 &__giver {
-    height: 100%;
+    @include bump-up;
     }
 }
 
@@ -141,6 +140,7 @@
 
     > * {
         padding-bottom: 5%;
+        padding-top: 3%;
     }
 
     .app_name {
