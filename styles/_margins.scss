@@ -1,10 +1,14 @@
 
 
 // Header and footer elements are here!
+// While the content has stretched so the footer looks okay, I can't get it to
+// stick to the bottom of a page without content in the middle. I have tried
+// absolute positioning but it breaks my index page (the footer shows up in the
+// middle of my grid image gallery) and I'm not sure why.
 
 header, footer {
     display: flex;
-    flex-grow:1;
+    flex-grow: 1;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;

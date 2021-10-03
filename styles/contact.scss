@@ -15,8 +15,8 @@
 
     .input-field {
         @include borderline-bottom;
-        padding-top: 7%;
-        padding-bottom: 7%;
+        padding-top: 10%;
+        padding-bottom: 3%;
     }
 
     input {
@@ -32,7 +32,7 @@
         background-color: $highlight-color;
         padding: 5% 10% 5% 10%;
         color: #FFF;
-        margin-top: 15%;
+        margin-top: 10%;
         cursor: pointer;
         border: 0;
     }
