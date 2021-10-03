@@ -155,7 +155,7 @@ h2 {
 
 .project_stats {
   display: table;
-  width: 25%;
+  width: 31%;
   border-collapse: collapse;
 }
 
@@ -176,17 +176,18 @@ h2 {
 }
 
 .project_stats td {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding: 5%;
+  padding-left: 0;
 }
 
 .project_showcase {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .project_showcase__hero {
-  object-fit: cover;
+  padding-bottom: 3%;
 }
 /*# sourceMappingURL=projects.css.map */
