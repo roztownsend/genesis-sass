@@ -15,7 +15,6 @@ h2, h3, h4, h5, h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #111111;
-  margin-top: 0;
 }
 
 h2 {
@@ -36,11 +35,13 @@ h5 {
 
 header, footer {
   display: flex;
+  flex-grow: 1;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  min-width: 69.375rem;
 }
 
 .nav_wrapper {
@@ -78,7 +79,11 @@ body {
   margin: auto;
   height: 100vh;
   width: 100vw;
-  max-width: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: min-content;
 }
 
 .intro {
@@ -87,6 +92,10 @@ body {
   flex-wrap: nowrap;
   padding-top: 3%;
   padding-bottom: 3%;
+}
+
+.intro__statement {
+  max-width: 59%;
 }
 
 .intro__tagline {
@@ -115,6 +124,7 @@ body {
 
 .gallery_grid {
   display: grid;
+  max-width: 69.375rem;
   grid-template-rows: repeat(32);
   grid-template-columns: repeat(9, 1fr);
   grid-gap: 1rem;
@@ -209,6 +219,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 2px solid #D8D8D8;
+  padding-top: 3%;
 }
 
 .awards__giver {

@@ -16,7 +16,6 @@ h2, h3, h4, h5, h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #111111;
-  margin-top: 0;
 }
 
 h2 {
@@ -37,11 +36,13 @@ h5 {
 
 header, footer {
   display: flex;
+  flex-grow: 1;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: center;
   padding-top: 3%;
   padding-bottom: 3%;
+  min-width: 69.375rem;
 }
 
 .nav_wrapper {
@@ -79,7 +80,11 @@ body {
   margin: auto;
   height: 100vh;
   width: 100vw;
-  max-width: 90%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: min-content;
 }
 
 .intro {
@@ -90,11 +95,15 @@ body {
   padding-bottom: 3%;
 }
 
+.intro__statement {
+  max-width: 59%;
+}
+
 .intro__tagline {
   width: max-content;
-  display: table;
   font-size: 1.125rem;
-  padding-bottom: 3%;
+  display: flex;
+  align-self: flex-end;
 }
 
 .intro__tagline::before {
@@ -122,7 +131,6 @@ h2, h3, h4, h5, h6 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
   color: #111111;
-  margin-top: 0;
 }
 
 h2 {
@@ -139,6 +147,10 @@ h4 {
 
 h5 {
   font-size: 1.125rem;
+}
+
+h2 {
+  margin-top: 0;
 }
 
 .project_stats {
@@ -166,5 +178,15 @@ h5 {
 .project_stats td {
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.project_showcase {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project_showcase__hero {
+  object-fit: cover;
 }
 /*# sourceMappingURL=projects.css.map */

@@ -3,7 +3,9 @@
 @import 'rem-to-px';
 @import 'fonts';
 
-
+h2 {
+    @include bump-up;
+}
 
 .project_stats {
     display: table;
@@ -11,7 +13,7 @@
     border-collapse: collapse;
 
     tr {
-        @include borderline;
+        @include borderline-bottom;
         }
     
     td:nth-child(odd) {
@@ -28,3 +30,12 @@
     }
 }
 
+.project_showcase {
+    width: 100%;
+    display: flex;
+    justify-content: center;  
+    
+    &__hero {
+        object-fit: cover;
+    }
+}

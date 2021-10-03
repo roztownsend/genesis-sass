@@ -30,7 +30,6 @@ h2, h3, h4, h5, h6 {
     font-family: $mulish;
     font-weight: $bold;
     color: $primary-color;
-    margin-top: 0;
 }
 
 h2 {
@@ -61,4 +60,6 @@ h5 {
     font-weight: bold;
 }
 
-
+@mixin bump-up {
+    margin-top: 0;
+} 

@@ -14,11 +14,11 @@
     font-weight: bold;
 }
 
-
 // Gallery grid section
 
 .gallery_grid {
     display: grid;
+    max-width: rem(1110px);
     grid-template-rows: repeat(32);
     grid-template-columns: repeat(9, 1fr);
     grid-gap: 1rem;
@@ -110,14 +110,15 @@
 // with a table instead of flexbox?
 
 .awards_list {
-    border-top: 2px solid $borderline-color;
+    @include borderline-top;
 }
 
 .awards {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 2px solid $borderline-color;
+    @include borderline-bottom;
+    padding-top: 3%;
 
 
 &__giver {

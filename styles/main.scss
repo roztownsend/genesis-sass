@@ -8,8 +8,12 @@
 
 $borderline-color: #D8D8D8;
 
-@mixin borderline {
+@mixin borderline-bottom {
     border-bottom: 2px solid $borderline-color;
+}
+
+@mixin borderline-top {
+    border-top: 2px solid $borderline-color;
 }
 
 // Document-wide formatting
@@ -19,9 +23,12 @@ body {
     margin: auto;
     height: 100vh;
     width: 100vw;
-    max-width: 90%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: min-content;
 }
-
 
 .intro {
     display: flex;
@@ -36,9 +43,9 @@ body {
 
     &__tagline {
         width: max-content;
-        display: table;
         font-size: rem(18);
-        padding-bottom: 3%;
+        display: flex;
+        align-self: flex-end;
     }
     
     &__tagline::before {
