@@ -3,9 +3,15 @@
 @import 'main';
 @import 'rem-to-px';
 
+.intro__statement {
+    padding-right: 15%;
+}
+
 .contact_form {
     @include label_font;
     @include label_grey;
+    width: 40%;
+    flex-shrink: 0;
 
     .input-field {
         @include borderline-bottom;
@@ -26,7 +32,7 @@
         background-color: $highlight-color;
         padding: 5% 10% 5% 10%;
         color: #FFF;
-        margin-top: 7%;
+        margin-top: 15%;
         cursor: pointer;
         border: 0;
     }
