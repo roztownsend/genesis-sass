@@ -14,34 +14,6 @@
     font-weight: bold;
 }
 
-.intro {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    padding-top: 3%;
-    padding-bottom: 3%;
-
-    &__statement { 
-        width: 59%; 
-    }
-
-    &__tagline {
-        width: max-content;
-        display: table;
-        font-size: rem(18);
-        padding-bottom: 3%;
-    }
-    
-    &__tagline::before {
-        border-top: 1px solid #888;
-        content: "";
-        display: block;
-        height: 100%;
-        width: 15%;
-        padding-bottom: 3%;
-      }
-}
 
 // Gallery grid section
 
@@ -50,9 +22,7 @@
     grid-template-rows: repeat(32);
     grid-template-columns: repeat(9, 1fr);
     grid-gap: 1rem;
-    margin: auto;
     min-width: rem(357px);
-    min-height: auto;
 
     img {
         height: 100%;
@@ -140,14 +110,14 @@
 // with a table instead of flexbox?
 
 .awards_list {
-    border-top: 2px solid #D8D8D8;
+    border-top: 2px solid $borderline-color;
 }
 
 .awards {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 2px solid #D8D8D8;
+    border-bottom: 2px solid $borderline-color;
 
 
 &__giver {
@@ -171,7 +141,7 @@
     > * {
         padding-bottom: 5%;
     }
-    
+
     .app_name {
         font-weight: $bold;
     }

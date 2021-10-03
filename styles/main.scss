@@ -6,8 +6,13 @@
 @import 'rem-to-px';
 
 
-// Document-wide formatting
+$borderline-color: #D8D8D8;
 
+@mixin borderline {
+    border-bottom: 2px solid $borderline-color;
+}
+
+// Document-wide formatting
 
 body {
     background-color: #F2F2F2;
@@ -17,3 +22,31 @@ body {
     max-width: 90%;
 }
 
+
+.intro {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    &__statement { 
+        max-width: 59%;
+    }
+
+    &__tagline {
+        width: max-content;
+        display: table;
+        font-size: rem(18);
+        padding-bottom: 3%;
+    }
+    
+    &__tagline::before {
+        border-top: 1px solid #888;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 15%;
+        padding-bottom: 3%;
+      }
+}

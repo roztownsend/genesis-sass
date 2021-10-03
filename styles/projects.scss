@@ -1,0 +1,30 @@
+
+@import 'main';
+@import 'rem-to-px';
+@import 'fonts';
+
+
+
+.project_stats {
+    display: table;
+    width: 25%;
+    border-collapse: collapse;
+
+    tr {
+        @include borderline;
+        }
+    
+    td:nth-child(odd) {
+        @include label_grey;
+    }
+
+    td:nth-child(even) {
+        @include label_black;
+    }
+
+    td {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+

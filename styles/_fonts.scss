@@ -30,6 +30,7 @@ h2, h3, h4, h5, h6 {
     font-family: $mulish;
     font-weight: $bold;
     color: $primary-color;
+    margin-top: 0;
 }
 
 h2 {
@@ -48,7 +49,16 @@ h5 {
     font-size: rem(18px);
 }
 
-h6 {
+@mixin label_black {
+    font-size: rem(18px);
+    color: $primary-color;
+    font-weight: bold;
+}
+
+@mixin label_grey {
     font-size: rem(18px);
     color: $secondary-color;
+    font-weight: bold;
 }
+
+
